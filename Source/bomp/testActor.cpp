@@ -25,7 +25,7 @@ void AtestActor::Tick(float DeltaTime)
 	//アクタの座標を取得
 	FVector playerPos = GetActorLocation();
 	//アクタのx座標を増やす
-	playerPos.X += 5.f * DeltaTime;
+	playerPos.X += moveSpeed * DeltaTime;
 	//アクタの座標を更新
 	SetActorLocation(playerPos);
 }
